@@ -4,7 +4,7 @@ An Interesting pattern was a common difference in the scores.
 When he compared his record with the queue he realised one of the trainee was no where to be found  Write an Algorithm to locate the lacking trainee
 
 Assumptions:  
- 1. Given that the misplaced score is between the  item in the last  and third item from the end;
+ 1. Given that the misplaced score is between the second item in the list  and third item from the end;
  2. There will be at least 6 known scores
 
 Expected output:  The missing score is <score> found at position <position>
@@ -59,6 +59,6 @@ function locator(scores){
 
 }
 
-let  sortedArray = [45,50,55,60,65,75,80,85,90,95]
+let  sortedArray = [45,50,55,65,70,75,80,85,90,95]
 //console.log(sortedArray)
 console.log('missing number is ', locator(sortedArray));

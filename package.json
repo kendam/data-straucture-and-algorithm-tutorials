@@ -1,0 +1,22 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Data Structure and Algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "kendam/data-straucture-and-algorithm-tutorials"
+  },
+  "keywords": [
+    "DSA",
+    "Data Structure and Algorithm"
+  ],
+  "author": "kenny",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

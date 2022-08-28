@@ -7,7 +7,7 @@ Assumptions:
  1. Given that the misplaced score is between the second item in the list  and third item from the end;
  2. There will be at least 6 known scores
 
-Expected output:  The missing score is <score> found at position <position>
+Expected output:  The missing score is <score> 
 
 where <score> and <position> are placeholders
 

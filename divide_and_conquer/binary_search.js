@@ -1,5 +1,3 @@
-// basic sorting 
-
 
 /**
  * returns the index of target value in a sorted array using o(logn) if found otherwise returns -1

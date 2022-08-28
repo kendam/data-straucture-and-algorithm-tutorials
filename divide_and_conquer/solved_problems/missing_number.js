@@ -17,14 +17,14 @@ function locator(scores){
     let firstIndex  = 0;
     let lastIndex = scores.length - 3
 
+     // calculate the common difference from the known space
+     const commonDifference = scores[lastIndex + 1] - scores[lastIndex];
+
     while(firstIndex <= lastIndex){
        
         //find the middel index
         let middleIndex = Math.floor((firstIndex +lastIndex)/2);
 
-
-        // calculate the common difference from the known space
-        let commonDifference = scores[lastIndex + 1] - scores[lastIndex];
 
         // Compare the difference between the middle score and the succeding score with the common difference
         if(scores[middleIndex + 1] - scores[middleIndex] !== commonDifference  ){
@@ -59,6 +59,6 @@ function locator(scores){
 
 }
 
-let  sortedArray = [45,50,55,65,70,75,80,85,90,95]
+let  sortedArray = [45,50,55,60,65,70,75,80,85,90,95]
 //console.log(sortedArray)
 console.log('missing number is ', locator(sortedArray));

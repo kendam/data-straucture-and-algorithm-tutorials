@@ -4,7 +4,7 @@ An Interesting pattern was a common difference in the scores.
 When he compared his record with the queue he realised one of the trainee was no where to be found  Write an Algorithm to locate the lacking trainee
 
 Assumptions:  
- 1. Given that the misplaced score is between the second item in the list  and third item from the end;
+ 1. Given that the misplaced score is between the first item in the list  and third item from the end;
  2. There will be at least 6 known scores
 
 Expected output:  The missing score is <score> 
@@ -14,7 +14,7 @@ where <score> and <position> are placeholders
 */
 
 function locator(scores){
-    let firstIndex  = 1;
+    let firstIndex  = 0;
     let lastIndex = scores.length - 3
 
     while(firstIndex <= lastIndex){
@@ -23,8 +23,8 @@ function locator(scores){
         let middleIndex = Math.floor((firstIndex +lastIndex)/2);
 
 
-        // calculate the common difference
-        let commonDifference = scores[1] - scores[0];
+        // calculate the common difference from the known space
+        let commonDifference = scores[lastIndex + 1] - scores[lastIndex];
 
         // Compare the difference between the middle score and the succeding score with the common difference
         if(scores[middleIndex + 1] - scores[middleIndex] !== commonDifference  ){
